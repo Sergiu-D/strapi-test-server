@@ -99,6 +99,7 @@ export interface SnippetsLink extends Struct.ComponentSchema {
     isExternal: Schema.Attribute.Boolean &
       Schema.Attribute.Required &
       Schema.Attribute.DefaultTo<false>;
+    text: Schema.Attribute.String & Schema.Attribute.Required;
     url: Schema.Attribute.String & Schema.Attribute.Required;
     variant: Schema.Attribute.Enumeration<['blue', 'white', 'outlined']> &
       Schema.Attribute.Required &
